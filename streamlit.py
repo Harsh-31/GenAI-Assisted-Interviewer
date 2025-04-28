@@ -4,8 +4,8 @@ import streamlit as st
 
 st.markdown("<h2 style='color: gold;'>Interview Question Generator</h2>", unsafe_allow_html=True)
 
-experience = st.text_input("Enter years of experience")
-designation = st.text_input("Enter the designation")
+experience = st.text_input("Enter years of Experience")
+designation = st.text_input("Enter the Designation")
 
 if st.button("Generate Questions"):
     payload = {"experience": experience, "designation": designation}
