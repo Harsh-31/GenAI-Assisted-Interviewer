@@ -4,6 +4,16 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 import os
 
+st.set_page_config(page_title="Interview Question Generator", page_icon=":books:", layout="centered")
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # API Key
 api_key = os.getenv("OPENAI_API_KEY")
 
